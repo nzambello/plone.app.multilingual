@@ -5,7 +5,7 @@ from setuptools import setup
 import os
 
 
-version = '5.2.1.dev0'
+version = '5.2.4.dev0'
 
 setup(
     name='plone.app.multilingual',
@@ -25,6 +25,8 @@ setup(
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     url='https://github.com/plone/plone.app.multilingual',
@@ -47,6 +49,7 @@ setup(
         'plone.behavior',
         'plone.dexterity',
         'setuptools',
+        'six',
         'z3c.relationfield',
         'zope.publisher',
     ],

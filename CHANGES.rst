@@ -1,7 +1,7 @@
 Changelog
 =========
 
-5.2.1 (unreleased)
+5.2.4 (unreleased)
 ------------------
 
 Breaking changes:
@@ -14,11 +14,54 @@ New features:
 
 Bug fixes:
 
-- Do not show deprecation warning when loading migrator code, 
+- *add item here*
+
+
+5.2.3 (2018-09-26)
+------------------
+
+Bug fixes:
+
+- Rerelease, as 5.2.1 was somehow released twice, once in June, once in September.
+  [maurits]
+
+
+5.2.2 (2018-09-25)
+------------------
+
+New features:
+
+- Make plone.app.controlpanel optional (no longer there in Plone 5.2).
+  [jensens]
+
+- Add compatability with python 3
+  [pbauer]
+
+Bug fixes:
+
+- Upgrade step to profile version 3 was lost and now recreated.
+  [jensens, 2silver]
+
+- Do not show deprecation warning when loading migrator code,
   as it is intended to load old LRF there.
   [jensens]
 
-- Fixed tests now that Catalan has translated 'assets' into 'recursos'.
+- Don't fail, if multilingual selector is called without query
+  [tomgross]
+
+- Fix tests for py3
+  [pbauer]
+
+- Fix connecting of documents
+  [tomgross]
+
+
+5.2.1 (2018-06-20)
+------------------
+
+Bug fixes:
+
+- Fixed tests now that Catalan has translated ‘assets’ into ‘recursos’. 
   [maurits]
 
 - Run addAttributeTG for the site root when installing. This prevents
